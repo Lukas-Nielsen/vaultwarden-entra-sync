@@ -1,12 +1,12 @@
 package model
 
 type Config struct {
-	ClientId     string   `env:"CLIENT_ID,notempty,required"`
-	TenantId     string   `env:"TENANT_ID,notempty,required"`
-	ClientSecret string   `env:"CLIENT_SECRET,notempty,required"`
-	BaseUrl      string   `env:"BASE_URL,notempty,required"`
-	AdminToken   string   `env:"ADMIN_TOKEN,notempty,required"`
-	Groups       []string `env:"GROUPS,notempty,required"`
-	Whitelist    []string `env:"WHITELIST,notempty,required"`
+	ClientId     string   `env:"CLIENT_ID,notEmpty,required"`
+	TenantId     string   `env:"TENANT_ID,notEmpty,required"`
+	ClientSecret string   `env:"CLIENT_SECRET,notEmpty,required"`
+	BaseUrl      string   `env:"BASE_URL,notEmpty,required"`
+	AdminToken   string   `env:"ADMIN_TOKEN,notEmpty,required"`
+	Groups       []string `env:"GROUPS,notEmpty,required"`
+	Whitelist    []string `env:"WHITELIST"`
 	Cron         string   `env:"CRON" envDefault:"*/15 * * * *"`
 }
