@@ -44,6 +44,8 @@ func init() {
 	select {}
 }
 
+func main() {}
+
 func run() {
 	toDisable := []string{}
 	toInvite := []string{}
